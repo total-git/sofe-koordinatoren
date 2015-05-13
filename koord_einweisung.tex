@@ -10,17 +10,32 @@
 \usepackage{subcaption}
 \usepackage{marvosym}
 \usepackage{wasysym}
+\usepackage{geometry}
 
 \renewcommand\thesubfigure{\arabic{subfigure}}
 
-\title{Koordinatoren HowTo}
-\author{Uni-Sommerfest 2015}
-\date{}
+\geometry{
+  includehead,
+  includefoot,
+  top=1cm,
+  headsep=.8cm,
+  bottom=1cm,
+  footskip=1cm,
+  left=2.5cm,
+  right=2.5cm,
+  %showframe
+}
 
 \begin{document}
-\maketitle
-% ---
-\include{00-tabelle}
+%\pagestyle{empty}
+\begin{center}
+  \includegraphics[width=\textwidth]{Briefkopf.pdf} \\
+  \vspace{4cm}
+  {\Huge\textbf{Koordinatoren HowTo}} \vspace{1cm} \\
+  {\large Uni-Sommerfest 2015}
+\end{center}
+\vfill
+\input{00-tabelle}
 % ---
 \include{01-aufbau}
 % ---
