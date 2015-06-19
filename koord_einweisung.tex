@@ -1,4 +1,4 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper,12pt]{article}
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -12,12 +12,13 @@
 \usepackage{geometry}
 \usepackage[locale=DE]{siunitx}
 \usepackage{eurosym}
+\usepackage{placeins}
 
 \DeclareSIUnit{\EUR}{\text{\euro}}
 
 \renewcommand\thesubfigure{\arabic{subfigure}}
 
-\newcommand{\graybox}[1]{\colorbox{lightgray}{{\vrule height 7pt depth 0pt width 0pt}\hspace{#1}}}
+\newcommand{\graybox}[1]{\colorbox{lightgray}{{\vrule height 10pt depth 0pt width 0pt}\hspace{#1}}}
 
 \geometry{
   includehead,
@@ -26,8 +27,8 @@
   headsep=.8cm,
   bottom=1cm,
   footskip=1cm,
-  left=2.5cm,
-  right=2.5cm,
+  left=1.5cm,
+  right=1.5cm,
   %showframe
 }
 
@@ -35,21 +36,22 @@
 %\pagestyle{empty}
 \begin{center}
   \includegraphics[width=\textwidth]{Briefkopf.pdf} \\
-  \vspace{4cm}
+  \vspace{2cm}
   {\Huge\textbf{Koordinatoren HowTo}} \vspace{1cm} \\
   {\large Uni-Sommerfest 2015}
 \end{center}
 \vfill
 \input{00-tabelle}
 % ---
-\include{01-aufbau}
+\input{01-aufbau}
 % ---
-\include{02-fest}
+\input{02-fest}
 % ---
-\include{03-abbau}
+\input{03-abbau}
 % ---
-\include{04-helfereinweisung}
+\input{04-helfereinweisung}
 % ---
-\include{05-inventur}
+\input{05-inventur}
 % ---
+\input{06-anhang}
 \end{document}
